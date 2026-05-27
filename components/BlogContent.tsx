@@ -1,22 +1,10 @@
-'use client'
-
-import { MDXRemote, MDXRemoteSerializeResult } from 'next-mdx-remote'
-import { serialize } from 'next-mdx-remote/serialize'
-import { useEffect, useState } from 'react'
+import { MDXRemote } from 'next-mdx-remote/rsc'
 
 interface BlogContentProps {
   content: string
 }
 
 export default function BlogContent({ content }: BlogContentProps) {
-  const [mdxSource, setMdxSource] = useState<MDXRemoteSerializeResult | null>(null)
-
-  useEffect(() => {
-    serialize(content).then(setMdxSource)
-  }, [content])
-
-  if (!mdxSource) return null
-
   return (
     <div className="
       prose prose-neutral max-w-none
@@ -35,7 +23,7 @@ export default function BlogContent({ content }: BlogContentProps) {
       prose-img:rounded-2xl prose-img:border prose-img:border-border
       prose-hr:border-border
     ">
-      <MDXRemote {...mdxSource} />
+      <MDXRemote source={content} />
     </div>
   )
 }
