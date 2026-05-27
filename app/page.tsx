@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { Clock, Heart, MessageCircle, Shield, Target, ChevronRight, Star, Check } from 'lucide-react'
+import { Clock, Heart, MessageCircle, Shield, Target, ChevronRight, Star, Check, BookOpen, Users, Sparkles } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
@@ -418,39 +418,42 @@ export default function LandingPage() {
         <section className="py-20 px-4 sm:px-6 lg:px-8 bg-muted">
           <div className="max-w-7xl mx-auto">
             <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4">
-              Simple Process
+              How It Works
             </h2>
             <p className="text-center text-muted-foreground mb-16 max-w-2xl mx-auto">
               Three easy steps to transform your relationship
             </p>
 
-            <div className="grid md:grid-cols-3 gap-8 relative">
-              <div className="text-center space-y-4 relative">
-                <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto text-2xl font-bold text-primary-foreground shadow-lg">
-                  1
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="bg-background rounded-2xl p-8 flex flex-col items-center text-center space-y-4 shadow-sm border border-border/50">
+                <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center">
+                  <BookOpen className="w-8 h-8 text-primary" />
                 </div>
+                <span className="text-xs font-semibold uppercase tracking-widest text-primary">Step 1</span>
                 <h3 className="text-xl font-semibold">Choose Your Discussion</h3>
-                <p className="text-muted-foreground">
+                <p className="text-muted-foreground text-sm leading-relaxed">
                   Pick the conversation topic that you both want to explore right now
                 </p>
               </div>
 
-              <div className="text-center space-y-4 relative">
-                <div className="w-20 h-20 bg-secondary rounded-full flex items-center justify-center mx-auto text-2xl font-bold text-secondary-foreground shadow-lg">
-                  2
+              <div className="bg-background rounded-2xl p-8 flex flex-col items-center text-center space-y-4 shadow-sm border border-border/50">
+                <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center">
+                  <Users className="w-8 h-8 text-primary" />
                 </div>
+                <span className="text-xs font-semibold uppercase tracking-widest text-primary">Step 2</span>
                 <h3 className="text-xl font-semibold">Talk Together</h3>
-                <p className="text-muted-foreground">
+                <p className="text-muted-foreground text-sm leading-relaxed">
                   Find a comfortable, distraction-free space and focus completely on each other
                 </p>
               </div>
 
-              <div className="text-center space-y-4 relative">
-                <div className="w-20 h-20 bg-accent rounded-full flex items-center justify-center mx-auto text-2xl font-bold text-accent-foreground shadow-lg">
-                  3
+              <div className="bg-background rounded-2xl p-8 flex flex-col items-center text-center space-y-4 shadow-sm border border-border/50">
+                <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center">
+                  <Sparkles className="w-8 h-8 text-primary" />
                 </div>
+                <span className="text-xs font-semibold uppercase tracking-widest text-primary">Step 3</span>
                 <h3 className="text-xl font-semibold">Reflect & Grow</h3>
-                <p className="text-muted-foreground">
+                <p className="text-muted-foreground text-sm leading-relaxed">
                   Take note of your insights and see how your connection grows stronger
                 </p>
               </div>
