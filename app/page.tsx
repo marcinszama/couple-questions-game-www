@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   title: 'The Couple Questions - Grow Your Connection | Evidence-Based Relationship Tool',
   description: 'Evidence-based guided discussions to help couples communicate better, resolve conflicts, and deepen connection. Complete challenges in one evening. Try free today!',
   alternates: {
-    canonical: '/',
+    canonical: 'https://www.couplequestionsgame.com',
   },
   openGraph: {
     title: 'The Couple Questions - Grow Your Connection | Evidence-Based Relationship Tool',
@@ -196,8 +196,8 @@ export default function LandingPage() {
                 <a href="#features" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
                   Product
                 </a>
-                <Link href="/resources" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
-                  Resources
+                <Link href="/blog" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+                  Blog
                 </Link>
                 <a href="#faq" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
                   FAQ
@@ -591,7 +591,8 @@ export default function LandingPage() {
               </div>
               <div className="flex gap-6 text-sm text-background/80">
                 <Link href="/about" className="hover:text-background transition-colors">About</Link>
-                <Link href="/resources" className="hover:text-background transition-colors">Resources</Link>
+                <Link href="/blog" className="hover:text-background transition-colors">Blog</Link>
+                <a href={`${APP_URL}/conflict-style-quiz`} className="hover:text-background transition-colors">Conflict Style Quiz</a>
                 <Link href="/privacy-policy" className="hover:text-background transition-colors">Privacy</Link>
                 <Link href="/terms-of-service" className="hover:text-background transition-colors">Terms</Link>
                 <ContactDialog />

@@ -17,7 +17,7 @@ export function MobileNav() {
       <SheetContent side="right" className="w-64">
         <div className="flex flex-col gap-6 mt-8">
           <a href="#features" className="text-lg font-medium text-foreground hover:text-primary transition-colors">Product</a>
-          <Link href="/resources" className="text-lg font-medium text-foreground hover:text-primary transition-colors">Resources</Link>
+          <Link href="/blog" className="text-lg font-medium text-foreground hover:text-primary transition-colors">Blog</Link>
           <a href="#faq" className="text-lg font-medium text-foreground hover:text-primary transition-colors">FAQ</a>
           <Link href="/about" className="text-lg font-medium text-foreground hover:text-primary transition-colors">About</Link>
           <Button asChild className="mt-4">
