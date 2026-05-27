@@ -592,7 +592,7 @@ export default function LandingPage() {
               <div className="flex gap-6 text-sm text-background/80">
                 <Link href="/about" className="hover:text-background transition-colors">About</Link>
                 <Link href="/blog" className="hover:text-background transition-colors">Blog</Link>
-                <a href={`${APP_URL}/conflict-style-quiz`} className="hover:text-background transition-colors">Conflict Style Quiz</a>
+                <Link href="/conflict-style-quiz" className="hover:text-background transition-colors">Conflict Style Quiz</Link>
                 <Link href="/privacy-policy" className="hover:text-background transition-colors">Privacy</Link>
                 <Link href="/terms-of-service" className="hover:text-background transition-colors">Terms</Link>
                 <ContactDialog />
